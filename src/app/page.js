@@ -42,9 +42,9 @@ export function Home() {
   const fetchingMovies = async (search) => {
     let url;
     if (searchType === 'Series') {
-      url = `http://www.omdbapi.com/?s=${search}&type=series&apikey=ab12d609`;
+      url = `https://www.omdbapi.com/?s=${search}&type=series&apikey=ab12d609`;
     } else if (searchType === 'Movies') {
-      url = `http://www.omdbapi.com/?s=${search}&type=movie&apikey=ab12d609`;
+      url = `https://www.omdbapi.com/?s=${search}&type=movie&apikey=ab12d609`;
     }
     const res = await axios.get(url);
     return res.data;
