@@ -19,7 +19,7 @@
 [https://form-validation-app-chi.vercel.app/](https://lucent-cajeta-67be77.netlify.app/)
 
 ## How does the project look? 
-![projectsample]([https://lucent-cajeta-67be77.netlify.app/](https://github.com/medetcandiler/shopfinity/blob/main/src/images/Screen%20Shot%202023-06-16%20at%2022.01.05.png))
+![projectsample](https://github.com/medetcandiler/shopfinity/blob/main/src/images/Screen%20Shot%202023-06-16%20at%2022.01.05.png)
 
 ---
 
