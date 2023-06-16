@@ -48,14 +48,14 @@ export default function SearchComponent({
             Search for:
             <button
               onClick={handleSearchType}
-              className="btn mx-2 py-1 text-sm"
+              className="btn mx-2 px-1 py-1 text-sm"
             >
               Movies
             </button>
             or
             <button
               onClick={handleSearchType}
-              className="btn py-1 text-sm ms-2"
+              className="btn py-1 px-1 text-sm ms-2"
             >
               Series
             </button>
