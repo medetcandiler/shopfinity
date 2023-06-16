@@ -83,7 +83,7 @@ export function Home() {
 
             <SearchComponent searchType={searchType} setSearchType={setSearchType} setSearch={setSearch} onChange={handleSearch} search={search} />
           </div>
-          {search && <div className='text-sm text-purple-700 py-2'>Movie results for:   </div>}
+          {search && <div className='text-sm text-purple-700 py-2'>Movie results for: &quot;{search}&quot;  </div>}
           {isLoading && <Loader />}
           {error && <div>Error: {error.message}</div>}
           <div className='flex flex-col gap-2'>
