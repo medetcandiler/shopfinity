@@ -40,12 +40,11 @@ export function Home() {
 
 
   const fetchingMovies = async (search) => {
-    const myApiKey = 'ab12d609';
     let url;
     if (searchType === 'Series') {
-      url = `http://www.omdbapi.com/?s=${search}&type=series&apikey=${myApiKey}`;
+      url = `http://www.omdbapi.com/?s=${search}&type=series&apikey=ab12d609`;
     } else if (searchType === 'Movies') {
-      url = `http://www.omdbapi.com/?s=${search}&type=movie&apikey=${myApiKey}`;
+      url = `http://www.omdbapi.com/?s=${search}&type=movie&apikey=ab12d609`;
     }
     const res = await axios.get(url);
     return res.data;
@@ -84,7 +83,7 @@ export function Home() {
 
             <SearchComponent searchType={searchType} setSearchType={setSearchType} setSearch={setSearch} onChange={handleSearch} search={search} />
           </div>
-          {search && <div className='text-sm text-purple-700 py-2'>Movie results for: &quot;{search}&quot;</div>}
+          {search && <div className='text-sm text-purple-700 py-2'>Movie results for:   </div>}
           {isLoading && <Loader />}
           {error && <div>Error: {error.message}</div>}
           <div className='flex flex-col gap-2'>
