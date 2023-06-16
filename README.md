@@ -16,7 +16,7 @@
 ---
 
 ## Live Link
-[https://shopfinity.vercel.app/]([https://shopfinity.vercel.app/])
+[https://shopfinity.vercel.app/](https://shopfinity.vercel.app/)
 
 ## How does the project look? 
 ![projectsample](https://github.com/medetcandiler/shopfinity/blob/main/src/images/Screen%20Shot%202023-06-16%20at%2022.01.05.png)
