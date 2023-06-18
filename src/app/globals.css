@@ -116,3 +116,89 @@
 select.noAppearance {
   -webkit-appearance: none;
 }
+
+
+/* page load animations  */
+.logo {
+  animation: logo-load 500ms ease-in;
+}
+
+.brand {
+  animation: brand-load 500ms ease-in;
+}
+
+.brand-text{
+  animation: brand-text-load 500ms ease-in;
+}
+
+.search-area{
+  animation: search-area-load 500ms ease-in;
+}
+
+.movie-card{
+  animation: moviea-card-load 250ms ease-in;
+}
+
+.selected-card{
+  animation: selected-card-load 500ms ease-in;
+}
+
+@keyframes logo-load {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes brand-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+@keyframes brand-text-load {
+  0%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateZ(0);
+  }
+}
+
+@keyframes search-area-load {
+  0%{
+    transform: translateX(200px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes moviea-card-load {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes selected-card-load {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

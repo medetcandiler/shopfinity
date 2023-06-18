@@ -16,7 +16,7 @@ function SelectedMovies({
   };
 
   return (
-    <div className="flex font-serif justify-between items-center px-5 text-[#FAF7ED] border border-purple-500 py-5 w-5/6 md:px-12">
+    <div className="selected-card flex font-serif justify-between items-center px-5 text-[#FAF7ED] border border-purple-500 py-5 w-5/6 md:px-12">
       <div className="flex space-x-6 items-center ">
         <Image
           src={poster}

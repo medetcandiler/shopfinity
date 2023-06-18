@@ -22,7 +22,7 @@ export default function SearchComponent({
   };
 
   return ( 
-    <div className=" flex items-center">
+    <div className="search-area flex items-center">
       <div className="relative flex mt-4 border w-full me-10 border-purple-200 rounded-md h-14 md:w-96">
         <input
           // type="search"

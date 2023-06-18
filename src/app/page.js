@@ -14,9 +14,6 @@ import debounce from 'lodash.debounce';
 import Image from 'next/image';
 import cam from '../images/cam.jpg'
 
-
-
-
 const queryClient = new QueryClient();
 
 export function Home() {
@@ -36,8 +33,6 @@ export function Home() {
     localStorage.setItem('selectedMovies', JSON.stringify(selected))
     setCount(selected.length)
   }, [selected])
-
-
 
   const fetchingMovies = async (search) => {
     let url;
@@ -64,7 +59,7 @@ export function Home() {
     <main className='flex flex-wrap w-full flex-col md:flex-row ' >
       <div className='bg-[#FAF7ED] md:w-1/2 '>
         <div className='flex flex-col space-y-5  px-10 py-5 pb-12 '>
-          <div className='mb-6 flex items-center space-x-2'>
+          <div className='logo mb-6 flex items-center space-x-2'>
             <Image
               src={cam}
               width={50}
@@ -75,11 +70,11 @@ export function Home() {
             <h1 className='text-3xl italic text-slate-700 font-bold'> Shopfinity </h1>
           </div>
           <div className=' space-y-10'>
-            <h1 className='text-6xl font-semibold space-y-5 '>
+            <h1 className='brand text-6xl font-semibold space-y-5 '>
               <span className='text-[#906509]'>Nominate — </span>
               <span className='text-purple-900'>where cinema shines.</span>
             </h1>
-            <h3 className='text-[#42474D] text-xl'> Explore and nominate your top 5 favorite movies & series below. </h3>
+            <h3 className='brand-text text-[#42474D] text-xl'> Explore and nominate your top 5 favorite movies & series below. </h3>
 
             <SearchComponent searchType={searchType} setSearchType={setSearchType} setSearch={setSearch} onChange={handleSearch} search={search} />
           </div>
