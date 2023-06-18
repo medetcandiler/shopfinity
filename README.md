@@ -41,4 +41,3 @@ I hope this brief introduction has provided you with insight into my background 
 ## Prepared by
 **Medetcan Diler**
 
-# shopfinity
