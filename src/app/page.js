@@ -107,7 +107,7 @@ export function Home() {
         </div>
       </div>
       <div className={`relative flex flex-col items-center  space-y-10 bg-purple-700 py-10 ${selected.length > 3 ? 'h-[1100px]' : 'h-[700px]'} md:h-auto flex-wrap md:w-1/2`}>
-        <h1 className='absolute top-5 right-10 text-xl  text-center text-[#FAF7ED]'>Nominated <span className='text-2xl'>{count}/5</span></h1>
+        <h1 className='absolute nominated top-5 right-10 text-xl  text-center text-[#FAF7ED]'>Nominated <span className='text-2xl nominated-count'>{count}/5</span></h1>
         {selected.map(movie => (
           <SelectedMovies
             movie={movie}

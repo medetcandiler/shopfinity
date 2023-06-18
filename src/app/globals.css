@@ -143,9 +143,11 @@ select.noAppearance {
   animation: selected-card-load 500ms ease-in;
 }
 
-.toggle-type{
-  animation: toogle-type-load 500ms ease-in;
+.nominated{
+  animation: nominated-load 500ms ease-in;
 }
+
+
 
 @keyframes logo-load {
   0% {
@@ -207,12 +209,13 @@ select.noAppearance {
   }
 }
 
-@keyframes toggle-type-load {
+@keyframes nominated-load {
   0%{
-    transform: translateY(-100%);
+    transform: translateX(100%);
     opacity: 0;
   }
   100%{
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
+
