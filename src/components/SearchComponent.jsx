@@ -25,7 +25,6 @@ export default function SearchComponent({
     <div className="search-area flex items-center">
       <div className="relative flex mt-4 border w-full me-10 border-purple-200 rounded-md h-14 md:w-96">
         <input
-          // type="search"
           className="block w-full px-5 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 "
           placeholder={`Search ${
             searchType[0].toLowerCase() + searchType.slice(1, searchType.length)
@@ -44,7 +43,7 @@ export default function SearchComponent({
           )}
         </button>
         {isTrue && (
-          <section className="absolute text-center  text-sm -top-11 w-full bg-purple-300 py-2 px-2 text-white rounded-md">
+          <section className="absolute  text-center  text-sm -top-11 w-full bg-purple-300 py-2 px-2 text-white rounded-md">
             Search for:
             <button
               onClick={handleSearchType}

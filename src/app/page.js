@@ -53,7 +53,7 @@ export function Home() {
   const handleSearch = debounce((e) => {
     const searchTerm = e.target.value;
     setSearch(searchTerm);
-  }, 600)
+  }, 1000)
 
   return (
     <main className='flex flex-wrap w-full flex-col md:flex-row ' >
@@ -96,9 +96,9 @@ export function Home() {
                 />
               ))
             ) : (
-              search !== '' && (
+              search !== '' && !isLoading && (
                 <div className='w-full flex flex-col text-center py-1 bg-[#F5E0DB] text-red-700 font-bold rounded-sm'>
-                  No movies found.
+                  No {searchType[0].toLocaleLowerCase() + searchType.slice(1,searchType.length)} found.
                   <span className='font-light'>Please review your search. </span>
                 </div>
               )
