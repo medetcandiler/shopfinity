@@ -1,6 +1,6 @@
 # Shopify Challenge
 
-"This project is a Next.js application built to allow users to nominate their favorite films or series. It leverages TanStack Query to fetch data, manages loading states, and handles error handling. The project also utilizes Tailwind CSS for styling, Material-UI components for UI elements, and makes use of useEffect and local storage.
+This project is a Next.js application built to allow users to nominate their favorite films or series. It leverages TanStack Query to fetch data, manages loading states, and handles error handling. The project also utilizes Tailwind CSS for styling, Material-UI components for UI elements, and makes use of useEffect and local storage.
 
 ## Features
 
@@ -41,4 +41,3 @@ I hope this brief introduction has provided you with insight into my background 
 ## Prepared by
 **Medetcan Diler**
 
-# shopfinity
