@@ -7,8 +7,6 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 export default function SearchComponent({
   setSearchType,
   searchType,
-  search,
-  setSearch,
   onChange
 }) {
   const [isTrue, setIsTrue] = useState(false);
